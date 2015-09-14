@@ -11,22 +11,13 @@
 //#define HOST @"https://api.jarkaslab.com/"//stage
 //#define HOST @"http://192.168.1.131/"
 @implementation TdUrlTool
-//+(NSString*)getEventsUrl{
-//    return [[[TdUrlTool alloc]init] getEventsUrl];
-//}
 +(NSString*)getEventsUrl{
     return [HOST stringByAppendingString:@"v2/events"];
 }
-//+(NSString*)getPageUrl:(NSInteger)landingPageId userId:(NSString*)userId{
-//    return [[[TdUrlTool alloc]init] getPageUrl:landingPageId userId:userId];
-//}
 +(NSString*)getPageUrl:(NSInteger)landingPageId userId:(NSString*)userId{
     NSString* API_URI_LANDING_PAGE = [HOST stringByAppendingString:[[NSString stringWithFormat:@"v2/page?page_id=%lu&user_id=",(unsigned long)landingPageId] stringByAppendingString:userId]];
     return API_URI_LANDING_PAGE;
 }
-//+(NSString*)getInAppMessageUrl:(NSString*)userId{
-//    return [[[TdUrlTool alloc]init] getInAppMessageUrl:userId];
-//}
 +(NSString*)getInAppMessageUrl:(NSString*)userId{
     NSString* API_URI_IN_APP_MESSAGES = [HOST stringByAppendingString:[@"v2/messages?user_id=" stringByAppendingString:userId]];
     return API_URI_IN_APP_MESSAGES;

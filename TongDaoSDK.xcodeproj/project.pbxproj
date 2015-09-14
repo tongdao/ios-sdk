@@ -31,7 +31,7 @@
 		2A6E61E01B719B2A00C2C2BD /* OnDownloadPageListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61A91B719B2A00C2C2BD /* OnDownloadPageListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A6E61E11B719B2A00C2C2BD /* OnErrorListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61AA1B719B2A00C2C2BD /* OnErrorListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A6E61E21B719B2A00C2C2BD /* TdLocationCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61AB1B719B2A00C2C2BD /* TdLocationCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A6E61E31B719B2A00C2C2BD /* TDReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61AC1B719B2A00C2C2BD /* TDReachability.m */; };
+		2A6E61E31B719B2A00C2C2BD /* TongDaoReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61AC1B719B2A00C2C2BD /* TongDaoReachability.m */; };
 		2A6E61E41B719B2A00C2C2BD /* TdService.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61AD1B719B2A00C2C2BD /* TdService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A6E61E51B719B2A00C2C2BD /* NSData+exten.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61AF1B719B2A00C2C2BD /* NSData+exten.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A6E61E61B719B2A00C2C2BD /* NSData+exten.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61B01B719B2A00C2C2BD /* NSData+exten.m */; };
@@ -73,7 +73,7 @@
 		2A6E620A1B719B2A00C2C2BD /* TdProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61D71B719B2A00C2C2BD /* TdProduct.m */; };
 		2A6E620B1B719B2A00C2C2BD /* TdSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61D81B719B2A00C2C2BD /* TdSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A6E620C1B719B2A00C2C2BD /* TdSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61D91B719B2A00C2C2BD /* TdSource.m */; };
-		2A6E620E1B719BC200C2C2BD /* TDReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E620D1B719BC200C2C2BD /* TDReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E620E1B719BC200C2C2BD /* TongDaoReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E620D1B719BC200C2C2BD /* TongDaoReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2ABC482D1B7B4C7600942519 /* TdMessageButtonBean.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF7692B1B79F87D00EAD347 /* TdMessageButtonBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AF345D51B8B2CC800A61450 /* FailList.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF345D31B8B2CC800A61450 /* FailList.h */; };
 		2AF345D61B8B2CC800A61450 /* FailList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF345D41B8B2CC800A61450 /* FailList.m */; };
@@ -97,7 +97,7 @@
 		2A6E61A91B719B2A00C2C2BD /* OnDownloadPageListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnDownloadPageListener.h; sourceTree = "<group>"; };
 		2A6E61AA1B719B2A00C2C2BD /* OnErrorListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnErrorListener.h; sourceTree = "<group>"; };
 		2A6E61AB1B719B2A00C2C2BD /* TdLocationCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdLocationCallback.h; sourceTree = "<group>"; };
-		2A6E61AC1B719B2A00C2C2BD /* TDReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDReachability.m; sourceTree = "<group>"; };
+		2A6E61AC1B719B2A00C2C2BD /* TongDaoReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongDaoReachability.m; sourceTree = "<group>"; };
 		2A6E61AD1B719B2A00C2C2BD /* TdService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdService.h; sourceTree = "<group>"; };
 		2A6E61AF1B719B2A00C2C2BD /* NSData+exten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+exten.h"; sourceTree = "<group>"; };
 		2A6E61B01B719B2A00C2C2BD /* NSData+exten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+exten.m"; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 		2A6E61D71B719B2A00C2C2BD /* TdProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdProduct.m; sourceTree = "<group>"; };
 		2A6E61D81B719B2A00C2C2BD /* TdSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdSource.h; sourceTree = "<group>"; };
 		2A6E61D91B719B2A00C2C2BD /* TdSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdSource.m; sourceTree = "<group>"; };
-		2A6E620D1B719BC200C2C2BD /* TDReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDReachability.h; sourceTree = "<group>"; };
+		2A6E620D1B719BC200C2C2BD /* TongDaoReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongDaoReachability.h; sourceTree = "<group>"; };
 		2AF345D31B8B2CC800A61450 /* FailList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailList.h; sourceTree = "<group>"; };
 		2AF345D41B8B2CC800A61450 /* FailList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailList.m; sourceTree = "<group>"; };
 		2AF345D71B8B588900A61450 /* JXMultiThreadObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXMultiThreadObject.h; sourceTree = "<group>"; };
@@ -164,10 +164,10 @@
 		2A6E618D1B71996E00C2C2BD = {
 			isa = PBXGroup;
 			children = (
-				2A6E620D1B719BC200C2C2BD /* TDReachability.h */,
+				2A6E620D1B719BC200C2C2BD /* TongDaoReachability.h */,
 				2A6E61A11B719B2A00C2C2BD /* Delegate */,
 				2A6E61A61B719B2A00C2C2BD /* protocols */,
-				2A6E61AC1B719B2A00C2C2BD /* TDReachability.m */,
+				2A6E61AC1B719B2A00C2C2BD /* TongDaoReachability.m */,
 				2A6E61AD1B719B2A00C2C2BD /* TdService.h */,
 				2A6E61AE1B719B2A00C2C2BD /* Crypto */,
 				2A6E61B31B719B2A00C2C2BD /* TdService.m */,
@@ -336,7 +336,7 @@
 				2A6E61F11B719B2A00C2C2BD /* TdUrlTool.h in Headers */,
 				2AF345DD1B8B588900A61450 /* JXMutableArray.h in Headers */,
 				2AF345D51B8B2CC800A61450 /* FailList.h in Headers */,
-				2A6E620E1B719BC200C2C2BD /* TDReachability.h in Headers */,
+				2A6E620E1B719BC200C2C2BD /* TongDaoReachability.h in Headers */,
 				2A6E61E71B719B2A00C2C2BD /* NSString+MD5.h in Headers */,
 				2A6E61F91B719B2A00C2C2BD /* ErrorBean.h in Headers */,
 				2A38C5831B74C5DD0008CD22 /* ApiCallBackForOpenMessage.h in Headers */,
@@ -445,7 +445,7 @@
 				2A6E61F41B719B2A00C2C2BD /* TongDaoApi.m in Sources */,
 				2A6E61FE1B719B2A00C2C2BD /* PageBean.m in Sources */,
 				2AF345DE1B8B588900A61450 /* JXMutableArray.m in Sources */,
-				2A6E61E31B719B2A00C2C2BD /* TDReachability.m in Sources */,
+				2A6E61E31B719B2A00C2C2BD /* TongDaoReachability.m in Sources */,
 				2AF345DC1B8B588900A61450 /* JXMultiThreadObject.m in Sources */,
 				2AF345D61B8B2CC800A61450 /* FailList.m in Sources */,
 				2A6E62041B719B2A00C2C2BD /* TdMessageBean.m in Sources */,

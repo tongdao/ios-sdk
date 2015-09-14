@@ -15,7 +15,7 @@
 #import <SystemConfiguration/SystemConfiguration.h>
 #import "TdDataTool.h"
 #import "sys/utsname.h"
-#import "TDReachability.h"
+#import "TongDaoReachability.h"
 #import "NSString+MD5.h"
 #import "TdOrderLine.h"
 //#import
@@ -103,7 +103,7 @@ singleton_implementation(TdDataTool)
     bzero(&zeroAddress, sizeof(zeroAddress));
     zeroAddress.sin_len = sizeof(zeroAddress);
     zeroAddress.sin_family = AF_INET;
-    switch ([[TDReachability reachabilityWithAddress:&zeroAddress] currentReachabilityStatus]) {
+    switch ([[TongDaoReachability reachabilityWithAddress:&zeroAddress] currentReachabilityStatus]) {
         case ReachableViaWiFi:
             connectType = @"wifi";
             break;
@@ -178,7 +178,7 @@ singleton_implementation(TdDataTool)
     bzero(&locationZeroAddress, sizeof(locationZeroAddress));
     locationZeroAddress.sin_len = sizeof(locationZeroAddress);
     locationZeroAddress.sin_family = AF_INET;
-    switch ([[TDReachability reachabilityWithAddress:&locationZeroAddress] currentReachabilityStatus]) {
+    switch ([[TongDaoReachability reachabilityWithAddress:&locationZeroAddress] currentReachabilityStatus]) {
         case ReachableViaWiFi:
             connectType = @"coarse";
             break;

@@ -386,9 +386,10 @@
         NSRange range = [path rangeOfString:dataUrl];
         if (range.length>0) {
 //            NSInteger intindex = range.length;
-            
+            NSUInteger StartLocation = range.location + range.length;
+            NSString* PAGEID = [path substringFromIndex:StartLocation];
+            return PAGEID;
         }
-
     }
     return nil;
 }

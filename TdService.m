@@ -68,11 +68,11 @@ static TdService *_instance;
 }
 
 -(void)sendOpenMessageTrackEvent:(TdEventBean*)tdEventBean{
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSMutableArray *arr = [[NSMutableArray alloc]init];
         [arr addObject:[tdEventBean getJsonObject]];
         [self postOpenMessageEventData:arr];
-    });
+//    });
 
 }
 

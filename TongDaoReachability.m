@@ -52,7 +52,7 @@
 
 #import <CoreFoundation/CoreFoundation.h>
 
-#import "TDReachability.h"
+#import "TongDaoReachability.h"
 
 
 NSString *TdkReachabilityChangedNotification = @"kNetworkReachabilityChangedNotification";
@@ -87,17 +87,17 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 {
 #pragma unused (target, flags)
 	NSCAssert(info != NULL, @"info was NULL in ReachabilityCallback");
-	NSCAssert([(__bridge NSObject*) info isKindOfClass: [TDReachability class]], @"info was wrong class in ReachabilityCallback");
+	NSCAssert([(__bridge NSObject*) info isKindOfClass: [TongDaoReachability class]], @"info was wrong class in ReachabilityCallback");
 
-    TDReachability* noteObject = (__bridge TDReachability *)info;
+    TongDaoReachability* noteObject = (__bridge TongDaoReachability *)info;
     // Post a notification to notify the client that the network reachability changed.
     [[NSNotificationCenter defaultCenter] postNotificationName: TdkReachabilityChangedNotification object: noteObject];
 }
 
 
-#pragma mark - TDReachability implementation
+#pragma mark - TongDaoReachability implementation
 
-@implementation TDReachability
+@implementation TongDaoReachability
 {
 	BOOL _alwaysReturnLocalWiFiStatus; //default is NO
 	SCNetworkReachabilityRef _reachabilityRef;
@@ -105,7 +105,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 
 + (instancetype)reachabilityWithHostName:(NSString *)hostName
 {
-	TDReachability* returnValue = NULL;
+	TongDaoReachability* returnValue = NULL;
 	SCNetworkReachabilityRef reachability = SCNetworkReachabilityCreateWithName(NULL, [hostName UTF8String]);
 	if (reachability != NULL)
 	{
@@ -124,7 +124,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 {
 	SCNetworkReachabilityRef reachability = SCNetworkReachabilityCreateWithAddress(kCFAllocatorDefault, (const struct sockaddr *)hostAddress);
 
-	TDReachability* returnValue = NULL;
+	TongDaoReachability* returnValue = NULL;
 
 	if (reachability != NULL)
 	{
@@ -161,7 +161,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 	// IN_LINKLOCALNETNUM is defined in <netinet/in.h> as 169.254.0.0.
 	localWifiAddress.sin_addr.s_addr = htonl(IN_LINKLOCALNETNUM);
 
-	TDReachability* returnValue = [self reachabilityWithAddress: &localWifiAddress];
+	TongDaoReachability* returnValue = [self reachabilityWithAddress: &localWifiAddress];
 	if (returnValue != NULL)
 	{
 		returnValue->_alwaysReturnLocalWiFiStatus = YES;
