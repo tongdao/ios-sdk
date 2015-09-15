@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2A38C57D1B74A2780008CD22 /* TongDaoSDKAggrate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2A38C5801B74A2780008CD22 /* Build configuration list for PBXAggregateTarget "TongDaoSDKAggrate" */;
+			buildPhases = (
+				2A38C5841B7823F70008CD22 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = TongDaoSDKAggrate;
+			productName = TongDaoSDKAggrate;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		2A38C5831B74C5DD0008CD22 /* ApiCallBackForOpenMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A38C5821B74C5DD0008CD22 /* ApiCallBackForOpenMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A39BCC11BA2AB44002087D6 /* SingleForMerge.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A39BCBF1BA2AB44002087D6 /* SingleForMerge.h */; };
+		2A39BCC21BA2AB44002087D6 /* SingleForMerge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A39BCC01BA2AB44002087D6 /* SingleForMerge.m */; };
+		2A6459431B9EB1F600C701A8 /* SingleForAnonymous.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6459411B9EB1F600C701A8 /* SingleForAnonymous.h */; };
+		2A6459441B9EB1F600C701A8 /* SingleForAnonymous.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6459421B9EB1F600C701A8 /* SingleForAnonymous.m */; };
+		2A6E61DA1B719B2A00C2C2BD /* InAppMessageApiCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61A21B719B2A00C2C2BD /* InAppMessageApiCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61DB1B719B2A00C2C2BD /* InAppMessageApiCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61A31B719B2A00C2C2BD /* InAppMessageApiCallback.m */; };
+		2A6E61DC1B719B2A00C2C2BD /* PageApiCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61A41B719B2A00C2C2BD /* PageApiCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61DD1B719B2A00C2C2BD /* PageApiCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61A51B719B2A00C2C2BD /* PageApiCallback.m */; };
+		2A6E61DE1B719B2A00C2C2BD /* ApiCallBack.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61A71B719B2A00C2C2BD /* ApiCallBack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61DF1B719B2A00C2C2BD /* OnDownloadInAppMessageListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61A81B719B2A00C2C2BD /* OnDownloadInAppMessageListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61E01B719B2A00C2C2BD /* OnDownloadPageListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61A91B719B2A00C2C2BD /* OnDownloadPageListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61E11B719B2A00C2C2BD /* OnErrorListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61AA1B719B2A00C2C2BD /* OnErrorListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61E21B719B2A00C2C2BD /* TdLocationCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61AB1B719B2A00C2C2BD /* TdLocationCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61E31B719B2A00C2C2BD /* TongDaoReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61AC1B719B2A00C2C2BD /* TongDaoReachability.m */; };
+		2A6E61E41B719B2A00C2C2BD /* TdService.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61AD1B719B2A00C2C2BD /* TdService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61E51B719B2A00C2C2BD /* NSData+exten.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61AF1B719B2A00C2C2BD /* NSData+exten.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61E61B719B2A00C2C2BD /* NSData+exten.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61B01B719B2A00C2C2BD /* NSData+exten.m */; };
+		2A6E61E71B719B2A00C2C2BD /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61B11B719B2A00C2C2BD /* NSString+MD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61E81B719B2A00C2C2BD /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61B21B719B2A00C2C2BD /* NSString+MD5.m */; };
+		2A6E61E91B719B2A00C2C2BD /* TdService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61B31B719B2A00C2C2BD /* TdService.m */; };
+		2A6E61EA1B719B2A00C2C2BD /* Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61B51B719B2A00C2C2BD /* Singleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61EB1B719B2A00C2C2BD /* TdDataTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61B61B719B2A00C2C2BD /* TdDataTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61EC1B719B2A00C2C2BD /* TdDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61B71B719B2A00C2C2BD /* TdDataTool.m */; };
+		2A6E61ED1B719B2A00C2C2BD /* TdErrorTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61B81B719B2A00C2C2BD /* TdErrorTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61EE1B719B2A00C2C2BD /* TdErrorTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61B91B719B2A00C2C2BD /* TdErrorTool.m */; };
+		2A6E61EF1B719B2A00C2C2BD /* TdStartLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61BA1B719B2A00C2C2BD /* TdStartLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61F01B719B2A00C2C2BD /* TdStartLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61BB1B719B2A00C2C2BD /* TdStartLocation.m */; };
+		2A6E61F11B719B2A00C2C2BD /* TdUrlTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61BC1B719B2A00C2C2BD /* TdUrlTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61F21B719B2A00C2C2BD /* TdUrlTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61BD1B719B2A00C2C2BD /* TdUrlTool.m */; };
+		2A6E61F31B719B2A00C2C2BD /* TongDaoApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61BE1B719B2A00C2C2BD /* TongDaoApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61F41B719B2A00C2C2BD /* TongDaoApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61BF1B719B2A00C2C2BD /* TongDaoApi.m */; };
+		2A6E61F51B719B2A00C2C2BD /* TongDaoBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61C01B719B2A00C2C2BD /* TongDaoBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61F61B719B2A00C2C2BD /* TongDaoBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61C11B719B2A00C2C2BD /* TongDaoBridge.m */; };
+		2A6E61F71B719B2A00C2C2BD /* TongDao.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61C31B719B2A00C2C2BD /* TongDao.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61F81B719B2A00C2C2BD /* TongDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61C41B719B2A00C2C2BD /* TongDao.m */; };
+		2A6E61F91B719B2A00C2C2BD /* ErrorBean.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61C61B719B2A00C2C2BD /* ErrorBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61FA1B719B2A00C2C2BD /* ErrorBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61C71B719B2A00C2C2BD /* ErrorBean.m */; };
+		2A6E61FB1B719B2A00C2C2BD /* InfoDataTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61C81B719B2A00C2C2BD /* InfoDataTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61FC1B719B2A00C2C2BD /* InfoDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61C91B719B2A00C2C2BD /* InfoDataTool.m */; };
+		2A6E61FD1B719B2A00C2C2BD /* PageBean.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61CA1B719B2A00C2C2BD /* PageBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E61FE1B719B2A00C2C2BD /* PageBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61CB1B719B2A00C2C2BD /* PageBean.m */; };
+		2A6E61FF1B719B2A00C2C2BD /* RewardBean.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61CC1B719B2A00C2C2BD /* RewardBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E62001B719B2A00C2C2BD /* RewardBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61CD1B719B2A00C2C2BD /* RewardBean.m */; };
+		2A6E62011B719B2A00C2C2BD /* TdEventBean.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61CE1B719B2A00C2C2BD /* TdEventBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E62021B719B2A00C2C2BD /* TdEventBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61CF1B719B2A00C2C2BD /* TdEventBean.m */; };
+		2A6E62031B719B2A00C2C2BD /* TdMessageBean.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61D01B719B2A00C2C2BD /* TdMessageBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E62041B719B2A00C2C2BD /* TdMessageBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61D11B719B2A00C2C2BD /* TdMessageBean.m */; };
+		2A6E62051B719B2A00C2C2BD /* TdOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61D21B719B2A00C2C2BD /* TdOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E62061B719B2A00C2C2BD /* TdOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61D31B719B2A00C2C2BD /* TdOrder.m */; };
+		2A6E62071B719B2A00C2C2BD /* TdOrderLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61D41B719B2A00C2C2BD /* TdOrderLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E62081B719B2A00C2C2BD /* TdOrderLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61D51B719B2A00C2C2BD /* TdOrderLine.m */; };
+		2A6E62091B719B2A00C2C2BD /* TdProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61D61B719B2A00C2C2BD /* TdProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E620A1B719B2A00C2C2BD /* TdProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61D71B719B2A00C2C2BD /* TdProduct.m */; };
+		2A6E620B1B719B2A00C2C2BD /* TdSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E61D81B719B2A00C2C2BD /* TdSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6E620C1B719B2A00C2C2BD /* TdSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E61D91B719B2A00C2C2BD /* TdSource.m */; };
+		2A6E620E1B719BC200C2C2BD /* TongDaoReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E620D1B719BC200C2C2BD /* TongDaoReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ABC482D1B7B4C7600942519 /* TdMessageButtonBean.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF7692B1B79F87D00EAD347 /* TdMessageButtonBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AF345D51B8B2CC800A61450 /* FailList.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF345D31B8B2CC800A61450 /* FailList.h */; };
+		2AF345D61B8B2CC800A61450 /* FailList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF345D41B8B2CC800A61450 /* FailList.m */; };
+		2AF345DB1B8B588900A61450 /* JXMultiThreadObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF345D71B8B588900A61450 /* JXMultiThreadObject.h */; };
+		2AF345DC1B8B588900A61450 /* JXMultiThreadObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF345D81B8B588900A61450 /* JXMultiThreadObject.m */; };
+		2AF345DD1B8B588900A61450 /* JXMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF345D91B8B588900A61450 /* JXMutableArray.h */; };
+		2AF345DE1B8B588900A61450 /* JXMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF345DA1B8B588900A61450 /* JXMutableArray.m */; };
+		2AF7692E1B79F87D00EAD347 /* TdMessageButtonBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF7692C1B79F87D00EAD347 /* TdMessageButtonBean.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A38C5821B74C5DD0008CD22 /* ApiCallBackForOpenMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiCallBackForOpenMessage.h; sourceTree = "<group>"; };
+		2A39BCBF1BA2AB44002087D6 /* SingleForMerge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleForMerge.h; sourceTree = "<group>"; };
+		2A39BCC01BA2AB44002087D6 /* SingleForMerge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleForMerge.m; sourceTree = "<group>"; };
+		2A6459411B9EB1F600C701A8 /* SingleForAnonymous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleForAnonymous.h; sourceTree = "<group>"; };
+		2A6459421B9EB1F600C701A8 /* SingleForAnonymous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleForAnonymous.m; sourceTree = "<group>"; };
+		2A6E61961B71996E00C2C2BD /* TongDaoSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TongDaoSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A6E619A1B71996E00C2C2BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A6E61A21B719B2A00C2C2BD /* InAppMessageApiCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppMessageApiCallback.h; sourceTree = "<group>"; };
+		2A6E61A31B719B2A00C2C2BD /* InAppMessageApiCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppMessageApiCallback.m; sourceTree = "<group>"; };
+		2A6E61A41B719B2A00C2C2BD /* PageApiCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageApiCallback.h; sourceTree = "<group>"; };
+		2A6E61A51B719B2A00C2C2BD /* PageApiCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageApiCallback.m; sourceTree = "<group>"; };
+		2A6E61A71B719B2A00C2C2BD /* ApiCallBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiCallBack.h; sourceTree = "<group>"; };
+		2A6E61A81B719B2A00C2C2BD /* OnDownloadInAppMessageListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnDownloadInAppMessageListener.h; sourceTree = "<group>"; };
+		2A6E61A91B719B2A00C2C2BD /* OnDownloadPageListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnDownloadPageListener.h; sourceTree = "<group>"; };
+		2A6E61AA1B719B2A00C2C2BD /* OnErrorListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnErrorListener.h; sourceTree = "<group>"; };
+		2A6E61AB1B719B2A00C2C2BD /* TdLocationCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdLocationCallback.h; sourceTree = "<group>"; };
+		2A6E61AC1B719B2A00C2C2BD /* TongDaoReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongDaoReachability.m; sourceTree = "<group>"; };
+		2A6E61AD1B719B2A00C2C2BD /* TdService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdService.h; sourceTree = "<group>"; };
+		2A6E61AF1B719B2A00C2C2BD /* NSData+exten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+exten.h"; sourceTree = "<group>"; };
+		2A6E61B01B719B2A00C2C2BD /* NSData+exten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+exten.m"; sourceTree = "<group>"; };
+		2A6E61B11B719B2A00C2C2BD /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		2A6E61B21B719B2A00C2C2BD /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		2A6E61B31B719B2A00C2C2BD /* TdService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdService.m; sourceTree = "<group>"; };
+		2A6E61B51B719B2A00C2C2BD /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		2A6E61B61B719B2A00C2C2BD /* TdDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdDataTool.h; sourceTree = "<group>"; };
+		2A6E61B71B719B2A00C2C2BD /* TdDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdDataTool.m; sourceTree = "<group>"; };
+		2A6E61B81B719B2A00C2C2BD /* TdErrorTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdErrorTool.h; sourceTree = "<group>"; };
+		2A6E61B91B719B2A00C2C2BD /* TdErrorTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdErrorTool.m; sourceTree = "<group>"; };
+		2A6E61BA1B719B2A00C2C2BD /* TdStartLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdStartLocation.h; sourceTree = "<group>"; };
+		2A6E61BB1B719B2A00C2C2BD /* TdStartLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdStartLocation.m; sourceTree = "<group>"; };
+		2A6E61BC1B719B2A00C2C2BD /* TdUrlTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdUrlTool.h; sourceTree = "<group>"; };
+		2A6E61BD1B719B2A00C2C2BD /* TdUrlTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdUrlTool.m; sourceTree = "<group>"; };
+		2A6E61BE1B719B2A00C2C2BD /* TongDaoApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongDaoApi.h; sourceTree = "<group>"; };
+		2A6E61BF1B719B2A00C2C2BD /* TongDaoApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongDaoApi.m; sourceTree = "<group>"; };
+		2A6E61C01B719B2A00C2C2BD /* TongDaoBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongDaoBridge.h; sourceTree = "<group>"; };
+		2A6E61C11B719B2A00C2C2BD /* TongDaoBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongDaoBridge.m; sourceTree = "<group>"; };
+		2A6E61C31B719B2A00C2C2BD /* TongDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TongDao.h; path = ../interFace/TongDao.h; sourceTree = "<group>"; };
+		2A6E61C41B719B2A00C2C2BD /* TongDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongDao.m; sourceTree = "<group>"; };
+		2A6E61C61B719B2A00C2C2BD /* ErrorBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorBean.h; sourceTree = "<group>"; };
+		2A6E61C71B719B2A00C2C2BD /* ErrorBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorBean.m; sourceTree = "<group>"; };
+		2A6E61C81B719B2A00C2C2BD /* InfoDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoDataTool.h; sourceTree = "<group>"; };
+		2A6E61C91B719B2A00C2C2BD /* InfoDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoDataTool.m; sourceTree = "<group>"; };
+		2A6E61CA1B719B2A00C2C2BD /* PageBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageBean.h; sourceTree = "<group>"; };
+		2A6E61CB1B719B2A00C2C2BD /* PageBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageBean.m; sourceTree = "<group>"; };
+		2A6E61CC1B719B2A00C2C2BD /* RewardBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardBean.h; sourceTree = "<group>"; };
+		2A6E61CD1B719B2A00C2C2BD /* RewardBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardBean.m; sourceTree = "<group>"; };
+		2A6E61CE1B719B2A00C2C2BD /* TdEventBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdEventBean.h; sourceTree = "<group>"; };
+		2A6E61CF1B719B2A00C2C2BD /* TdEventBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdEventBean.m; sourceTree = "<group>"; };
+		2A6E61D01B719B2A00C2C2BD /* TdMessageBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdMessageBean.h; sourceTree = "<group>"; };
+		2A6E61D11B719B2A00C2C2BD /* TdMessageBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdMessageBean.m; sourceTree = "<group>"; };
+		2A6E61D21B719B2A00C2C2BD /* TdOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdOrder.h; sourceTree = "<group>"; };
+		2A6E61D31B719B2A00C2C2BD /* TdOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdOrder.m; sourceTree = "<group>"; };
+		2A6E61D41B719B2A00C2C2BD /* TdOrderLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdOrderLine.h; sourceTree = "<group>"; };
+		2A6E61D51B719B2A00C2C2BD /* TdOrderLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdOrderLine.m; sourceTree = "<group>"; };
+		2A6E61D61B719B2A00C2C2BD /* TdProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdProduct.h; sourceTree = "<group>"; };
+		2A6E61D71B719B2A00C2C2BD /* TdProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdProduct.m; sourceTree = "<group>"; };
+		2A6E61D81B719B2A00C2C2BD /* TdSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdSource.h; sourceTree = "<group>"; };
+		2A6E61D91B719B2A00C2C2BD /* TdSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdSource.m; sourceTree = "<group>"; };
+		2A6E620D1B719BC200C2C2BD /* TongDaoReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongDaoReachability.h; sourceTree = "<group>"; };
+		2AF345D31B8B2CC800A61450 /* FailList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailList.h; sourceTree = "<group>"; };
+		2AF345D41B8B2CC800A61450 /* FailList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailList.m; sourceTree = "<group>"; };
+		2AF345D71B8B588900A61450 /* JXMultiThreadObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXMultiThreadObject.h; sourceTree = "<group>"; };
+		2AF345D81B8B588900A61450 /* JXMultiThreadObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXMultiThreadObject.m; sourceTree = "<group>"; };
+		2AF345D91B8B588900A61450 /* JXMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXMutableArray.h; sourceTree = "<group>"; };
+		2AF345DA1B8B588900A61450 /* JXMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXMutableArray.m; sourceTree = "<group>"; };
+		2AF7692B1B79F87D00EAD347 /* TdMessageButtonBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdMessageButtonBean.h; sourceTree = "<group>"; };
+		2AF7692C1B79F87D00EAD347 /* TdMessageButtonBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdMessageButtonBean.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A6E61931B71996E00C2C2BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A6E618D1B71996E00C2C2BD = {
+			isa = PBXGroup;
+			children = (
+				2A6E620D1B719BC200C2C2BD /* TongDaoReachability.h */,
+				2A6E61A11B719B2A00C2C2BD /* Delegate */,
+				2A6E61A61B719B2A00C2C2BD /* protocols */,
+				2A6E61AC1B719B2A00C2C2BD /* TongDaoReachability.m */,
+				2A6E61AD1B719B2A00C2C2BD /* TdService.h */,
+				2A6E61AE1B719B2A00C2C2BD /* Crypto */,
+				2A6E61B31B719B2A00C2C2BD /* TdService.m */,
+				2A6E61B41B719B2A00C2C2BD /* Tools */,
+				2A6E61C21B719B2A00C2C2BD /* interFace */,
+				2A6E61C51B719B2A00C2C2BD /* Beans */,
+				2A6E61981B71996E00C2C2BD /* TongDaoSDK */,
+				2A6E61971B71996E00C2C2BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A6E61971B71996E00C2C2BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A6E61961B71996E00C2C2BD /* TongDaoSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A6E61981B71996E00C2C2BD /* TongDaoSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2A6E61C31B719B2A00C2C2BD /* TongDao.h */,
+				2A6E61991B71996E00C2C2BD /* Supporting Files */,
+			);
+			path = TongDaoSDK;
+			sourceTree = "<group>";
+		};
+		2A6E61991B71996E00C2C2BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A6E619A1B71996E00C2C2BD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A6E61A11B719B2A00C2C2BD /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				2A6E61A21B719B2A00C2C2BD /* InAppMessageApiCallback.h */,
+				2A6E61A31B719B2A00C2C2BD /* InAppMessageApiCallback.m */,
+				2A6E61A41B719B2A00C2C2BD /* PageApiCallback.h */,
+				2A6E61A51B719B2A00C2C2BD /* PageApiCallback.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		2A6E61A61B719B2A00C2C2BD /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2A6E61A71B719B2A00C2C2BD /* ApiCallBack.h */,
+				2A6E61A81B719B2A00C2C2BD /* OnDownloadInAppMessageListener.h */,
+				2A6E61A91B719B2A00C2C2BD /* OnDownloadPageListener.h */,
+				2A6E61AA1B719B2A00C2C2BD /* OnErrorListener.h */,
+				2A6E61AB1B719B2A00C2C2BD /* TdLocationCallback.h */,
+				2A38C5821B74C5DD0008CD22 /* ApiCallBackForOpenMessage.h */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		2A6E61AE1B719B2A00C2C2BD /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				2A6E61AF1B719B2A00C2C2BD /* NSData+exten.h */,
+				2A6E61B01B719B2A00C2C2BD /* NSData+exten.m */,
+				2A6E61B11B719B2A00C2C2BD /* NSString+MD5.h */,
+				2A6E61B21B719B2A00C2C2BD /* NSString+MD5.m */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		2A6E61B41B719B2A00C2C2BD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2AF345D71B8B588900A61450 /* JXMultiThreadObject.h */,
+				2AF345D81B8B588900A61450 /* JXMultiThreadObject.m */,
+				2AF345D91B8B588900A61450 /* JXMutableArray.h */,
+				2AF345DA1B8B588900A61450 /* JXMutableArray.m */,
+				2A6E61B51B719B2A00C2C2BD /* Singleton.h */,
+				2A6E61B61B719B2A00C2C2BD /* TdDataTool.h */,
+				2A6E61B71B719B2A00C2C2BD /* TdDataTool.m */,
+				2A6E61B81B719B2A00C2C2BD /* TdErrorTool.h */,
+				2A6E61B91B719B2A00C2C2BD /* TdErrorTool.m */,
+				2A6E61BA1B719B2A00C2C2BD /* TdStartLocation.h */,
+				2A6E61BB1B719B2A00C2C2BD /* TdStartLocation.m */,
+				2A6E61BC1B719B2A00C2C2BD /* TdUrlTool.h */,
+				2A6E61BD1B719B2A00C2C2BD /* TdUrlTool.m */,
+				2A6E61BE1B719B2A00C2C2BD /* TongDaoApi.h */,
+				2A6E61BF1B719B2A00C2C2BD /* TongDaoApi.m */,
+				2A6E61C01B719B2A00C2C2BD /* TongDaoBridge.h */,
+				2A6E61C11B719B2A00C2C2BD /* TongDaoBridge.m */,
+				2AF345D31B8B2CC800A61450 /* FailList.h */,
+				2AF345D41B8B2CC800A61450 /* FailList.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2A6E61C21B719B2A00C2C2BD /* interFace */ = {
+			isa = PBXGroup;
+			children = (
+				2A6E61C41B719B2A00C2C2BD /* TongDao.m */,
+			);
+			path = interFace;
+			sourceTree = "<group>";
+		};
+		2A6E61C51B719B2A00C2C2BD /* Beans */ = {
+			isa = PBXGroup;
+			children = (
+				2A6E61C61B719B2A00C2C2BD /* ErrorBean.h */,
+				2A6E61C71B719B2A00C2C2BD /* ErrorBean.m */,
+				2A6E61C81B719B2A00C2C2BD /* InfoDataTool.h */,
+				2A6E61C91B719B2A00C2C2BD /* InfoDataTool.m */,
+				2A6E61CA1B719B2A00C2C2BD /* PageBean.h */,
+				2A6E61CB1B719B2A00C2C2BD /* PageBean.m */,
+				2A6E61CC1B719B2A00C2C2BD /* RewardBean.h */,
+				2A6E61CD1B719B2A00C2C2BD /* RewardBean.m */,
+				2A6E61CE1B719B2A00C2C2BD /* TdEventBean.h */,
+				2A6E61CF1B719B2A00C2C2BD /* TdEventBean.m */,
+				2A6E61D01B719B2A00C2C2BD /* TdMessageBean.h */,
+				2A6E61D11B719B2A00C2C2BD /* TdMessageBean.m */,
+				2A6E61D21B719B2A00C2C2BD /* TdOrder.h */,
+				2A6E61D31B719B2A00C2C2BD /* TdOrder.m */,
+				2A6E61D41B719B2A00C2C2BD /* TdOrderLine.h */,
+				2A6E61D51B719B2A00C2C2BD /* TdOrderLine.m */,
+				2A6E61D61B719B2A00C2C2BD /* TdProduct.h */,
+				2A6E61D71B719B2A00C2C2BD /* TdProduct.m */,
+				2A6E61D81B719B2A00C2C2BD /* TdSource.h */,
+				2A6E61D91B719B2A00C2C2BD /* TdSource.m */,
+				2AF7692B1B79F87D00EAD347 /* TdMessageButtonBean.h */,
+				2AF7692C1B79F87D00EAD347 /* TdMessageButtonBean.m */,
+				2A6459411B9EB1F600C701A8 /* SingleForAnonymous.h */,
+				2A6459421B9EB1F600C701A8 /* SingleForAnonymous.m */,
+				2A39BCBF1BA2AB44002087D6 /* SingleForMerge.h */,
+				2A39BCC01BA2AB44002087D6 /* SingleForMerge.m */,
+			);
+			path = Beans;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2A6E61A01B719A6500C2C2BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A6E61F71B719B2A00C2C2BD /* TongDao.h in Headers */,
+				2A6E61E11B719B2A00C2C2BD /* OnErrorListener.h in Headers */,
+				2A6E62091B719B2A00C2C2BD /* TdProduct.h in Headers */,
+				2A6E61FD1B719B2A00C2C2BD /* PageBean.h in Headers */,
+				2A6E61E21B719B2A00C2C2BD /* TdLocationCallback.h in Headers */,
+				2A6E61EB1B719B2A00C2C2BD /* TdDataTool.h in Headers */,
+				2A6E61E41B719B2A00C2C2BD /* TdService.h in Headers */,
+				2A6E62071B719B2A00C2C2BD /* TdOrderLine.h in Headers */,
+				2A6E61FF1B719B2A00C2C2BD /* RewardBean.h in Headers */,
+				2AF345DB1B8B588900A61450 /* JXMultiThreadObject.h in Headers */,
+				2A6E61FB1B719B2A00C2C2BD /* InfoDataTool.h in Headers */,
+				2A6459431B9EB1F600C701A8 /* SingleForAnonymous.h in Headers */,
+				2A6E61DF1B719B2A00C2C2BD /* OnDownloadInAppMessageListener.h in Headers */,
+				2A6E62031B719B2A00C2C2BD /* TdMessageBean.h in Headers */,
+				2A6E62011B719B2A00C2C2BD /* TdEventBean.h in Headers */,
+				2A6E61EA1B719B2A00C2C2BD /* Singleton.h in Headers */,
+				2A6E61EF1B719B2A00C2C2BD /* TdStartLocation.h in Headers */,
+				2A6E61F51B719B2A00C2C2BD /* TongDaoBridge.h in Headers */,
+				2A6E61DA1B719B2A00C2C2BD /* InAppMessageApiCallback.h in Headers */,
+				2A6E61F31B719B2A00C2C2BD /* TongDaoApi.h in Headers */,
+				2A6E61E51B719B2A00C2C2BD /* NSData+exten.h in Headers */,
+				2A6E62051B719B2A00C2C2BD /* TdOrder.h in Headers */,
+				2A6E61E01B719B2A00C2C2BD /* OnDownloadPageListener.h in Headers */,
+				2A6E61ED1B719B2A00C2C2BD /* TdErrorTool.h in Headers */,
+				2A6E620B1B719B2A00C2C2BD /* TdSource.h in Headers */,
+				2A6E61F11B719B2A00C2C2BD /* TdUrlTool.h in Headers */,
+				2AF345DD1B8B588900A61450 /* JXMutableArray.h in Headers */,
+				2A39BCC11BA2AB44002087D6 /* SingleForMerge.h in Headers */,
+				2AF345D51B8B2CC800A61450 /* FailList.h in Headers */,
+				2A6E620E1B719BC200C2C2BD /* TongDaoReachability.h in Headers */,
+				2A6E61E71B719B2A00C2C2BD /* NSString+MD5.h in Headers */,
+				2A6E61F91B719B2A00C2C2BD /* ErrorBean.h in Headers */,
+				2A38C5831B74C5DD0008CD22 /* ApiCallBackForOpenMessage.h in Headers */,
+				2A6E61DE1B719B2A00C2C2BD /* ApiCallBack.h in Headers */,
+				2A6E61DC1B719B2A00C2C2BD /* PageApiCallback.h in Headers */,
+				2ABC482D1B7B4C7600942519 /* TdMessageButtonBean.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2A6E61951B71996E00C2C2BD /* TongDaoSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A6E619D1B71996E00C2C2BD /* Build configuration list for PBXNativeTarget "TongDaoSDK" */;
+			buildPhases = (
+				2A6E61921B71996E00C2C2BD /* Sources */,
+				2A6E61931B71996E00C2C2BD /* Frameworks */,
+				2A6E61941B71996E00C2C2BD /* Resources */,
+				2A6E61A01B719A6500C2C2BD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TongDaoSDK;
+			productName = TongDaoSDK;
+			productReference = 2A6E61961B71996E00C2C2BD /* TongDaoSDK.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A6E618E1B71996E00C2C2BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Tongdao;
+				TargetAttributes = {
+					2A38C57D1B74A2780008CD22 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					2A6E61951B71996E00C2C2BD = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = 2A6E61911B71996E00C2C2BD /* Build configuration list for PBXProject "TongDaoSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2A6E618D1B71996E00C2C2BD;
+			productRefGroup = 2A6E61971B71996E00C2C2BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A6E61951B71996E00C2C2BD /* TongDaoSDK */,
+				2A38C57D1B74A2780008CD22 /* TongDaoSDKAggrate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A6E61941B71996E00C2C2BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A38C5841B7823F70008CD22 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "UNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\n\n# Step 1. Build Device and Simulator versions\n\n\n# Step 2. Cleaning the oldest.\n\n\n#if [ -d \"${INSTALL_DIR6}\" ]\n#then\n#rm -rf \"${INSTALL_DIR6}\"\n#fi\n\n\n\n# Step 3. Create the install dir\n#mkdir -p \"${INSTALL_DIR1}\" \"${INSTALL_DIR2}\" \"${INSTALL_DIR3}\" \"${INSTALL_DIR4}\" \"${INSTALL_DIR5}\" \"${INSTALL_DIR6}\" \"${INSTALL_DIR7}\"\n\n# Step 4. Copy the framework structure (from iphoneos build) to the universal folder\n\n\n# Step 5. Copy Swift modules (from iphonesimulator build) to the copied framework directory\n\n\n\n# Step 6. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A6E61921B71996E00C2C2BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A6E61EE1B719B2A00C2C2BD /* TdErrorTool.m in Sources */,
+				2A6459441B9EB1F600C701A8 /* SingleForAnonymous.m in Sources */,
+				2A6E61F81B719B2A00C2C2BD /* TongDao.m in Sources */,
+				2A6E61F21B719B2A00C2C2BD /* TdUrlTool.m in Sources */,
+				2A6E61F01B719B2A00C2C2BD /* TdStartLocation.m in Sources */,
+				2A6E61FA1B719B2A00C2C2BD /* ErrorBean.m in Sources */,
+				2A6E61EC1B719B2A00C2C2BD /* TdDataTool.m in Sources */,
+				2A6E61DD1B719B2A00C2C2BD /* PageApiCallback.m in Sources */,
+				2AF7692E1B79F87D00EAD347 /* TdMessageButtonBean.m in Sources */,
+				2A6E620C1B719B2A00C2C2BD /* TdSource.m in Sources */,
+				2A6E61F41B719B2A00C2C2BD /* TongDaoApi.m in Sources */,
+				2A6E61FE1B719B2A00C2C2BD /* PageBean.m in Sources */,
+				2AF345DE1B8B588900A61450 /* JXMutableArray.m in Sources */,
+				2A6E61E31B719B2A00C2C2BD /* TongDaoReachability.m in Sources */,
+				2AF345DC1B8B588900A61450 /* JXMultiThreadObject.m in Sources */,
+				2AF345D61B8B2CC800A61450 /* FailList.m in Sources */,
+				2A6E62041B719B2A00C2C2BD /* TdMessageBean.m in Sources */,
+				2A6E61FC1B719B2A00C2C2BD /* InfoDataTool.m in Sources */,
+				2A6E61E81B719B2A00C2C2BD /* NSString+MD5.m in Sources */,
+				2A6E62021B719B2A00C2C2BD /* TdEventBean.m in Sources */,
+				2A6E62001B719B2A00C2C2BD /* RewardBean.m in Sources */,
+				2A6E61E91B719B2A00C2C2BD /* TdService.m in Sources */,
+				2A6E62061B719B2A00C2C2BD /* TdOrder.m in Sources */,
+				2A6E61DB1B719B2A00C2C2BD /* InAppMessageApiCallback.m in Sources */,
+				2A39BCC21BA2AB44002087D6 /* SingleForMerge.m in Sources */,
+				2A6E61E61B719B2A00C2C2BD /* NSData+exten.m in Sources */,
+				2A6E61F61B719B2A00C2C2BD /* TongDaoBridge.m in Sources */,
+				2A6E62081B719B2A00C2C2BD /* TdOrderLine.m in Sources */,
+				2A6E620A1B719B2A00C2C2BD /* TdProduct.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2A38C57E1B74A2780008CD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2A38C57F1B74A2780008CD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2A6E619B1B71996E00C2C2BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A6E619C1B71996E00C2C2BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		2A6E619E1B71996E00C2C2BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				INFOPLIST_FILE = TongDaoSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		2A6E619F1B71996E00C2C2BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				INFOPLIST_FILE = TongDaoSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A38C5801B74A2780008CD22 /* Build configuration list for PBXAggregateTarget "TongDaoSDKAggrate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A38C57E1B74A2780008CD22 /* Debug */,
+				2A38C57F1B74A2780008CD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A6E61911B71996E00C2C2BD /* Build configuration list for PBXProject "TongDaoSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A6E619B1B71996E00C2C2BD /* Debug */,
+				2A6E619C1B71996E00C2C2BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A6E619D1B71996E00C2C2BD /* Build configuration list for PBXNativeTarget "TongDaoSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A6E619E1B71996E00C2C2BD /* Debug */,
+				2A6E619F1B71996E00C2C2BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A6E618E1B71996E00C2C2BD /* Project object */;
+}
