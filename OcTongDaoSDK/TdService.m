@@ -15,6 +15,7 @@
 #import "TdErrorTool.h"
 #import "FailList.h"
 #import "SingleForAnonymous.h"
+#import "TdDataTool.h"
 @implementation TdService
 //singleton_implementation(TdService)
 static TdService *_instance;
@@ -93,7 +94,7 @@ static TdService *_instance;
     NSMutableDictionary* data=[self makeEventsJsonDec:arr];
 
     if (data != nil) {
-        NSLog(@"open message%@",data);
+//        NSLog(@"open message%@",data);
         [TongDaoApi postEvents:data callBackForOpenMessage:self];
     }
 }
@@ -113,7 +114,7 @@ static TdService *_instance;
     }
         NSMutableDictionary* data=[self makeEventsJsonDec:arr];
         if (data != nil) {
-            NSLog(@"%@",data);
+//            NSLog(@"%@",data);
             [TongDaoApi postEvents:data callBack:self];
         }
 
@@ -230,7 +231,7 @@ static TdService *_instance;
     [initDic setValue:[infoTool getAppDic] forKey:@"!application"];
     [initDic setValue:[infoTool getCarrierDic] forKey:@"!connection"];
     [initDic setValue:[infoTool getFingerprintDict] forKey:@"!fingerprint"];
-    NSNumber *isAnonymous = [NSNumber numberWithBool:[SingleForAnonymous sharedSingleForAnonymous].isAnonymous];
+    NSNumber *isAnonymous = [NSNumber numberWithBool:[[TdDataTool sharedTdDataTool] getAnonymous]];
     [initDic setValue:isAnonymous forKey:@"!anonymous"];
     TdEventBean* tdEventBean = [[TdEventBean alloc]initWithaction:identify event:nil andProperties:initDic];
     [self sendTrackEvent:tdEventBean];

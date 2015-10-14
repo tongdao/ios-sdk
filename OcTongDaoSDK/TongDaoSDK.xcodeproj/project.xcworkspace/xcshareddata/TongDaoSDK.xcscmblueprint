@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6181776F61038BD25877FEF0DCC746CE566BA4FB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6181776F61038BD25877FEF0DCC746CE566BA4FB" : 0,
+    "AC6D22FAFE947D8A5E06150BAEA84B7BA3CB7C01" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5BD64E32-9B14-470F-937B-C147097ED8FF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6181776F61038BD25877FEF0DCC746CE566BA4FB" : "ios-sdk",
+    "AC6D22FAFE947D8A5E06150BAEA84B7BA3CB7C01" : "0qian_ios_swift_sdk"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TongDaoSDK",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OcTongDaoSDK\/TongDaoSDK.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.jarkaslab.com:mobile\/ios-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6181776F61038BD25877FEF0DCC746CE566BA4FB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.jarkaslab.com:root\/0qian_ios_swift_sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AC6D22FAFE947D8A5E06150BAEA84B7BA3CB7C01"
+    }
+  ]
+}

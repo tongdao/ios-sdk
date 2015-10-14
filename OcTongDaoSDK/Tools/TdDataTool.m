@@ -40,7 +40,19 @@ singleton_implementation(TdDataTool)
     [userDefaults setValue:userId forKeyPath:@"TD_USER_ID"];
     [userDefaults synchronize];
 }
-
+-(void)saveAnonymous:(BOOL)isAnonymous{
+    NSNumber* anoymous = [NSNumber numberWithBool:isAnonymous];
+    NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setValue:anoymous forKeyPath:@"TD_USER_ANONYMOUS"];
+    [userDefaults synchronize];
+}
+-(BOOL)getAnonymous{
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"TD_USER_ANONYMOUS"]) {
+        NSNumber* anonymous = [[NSUserDefaults standardUserDefaults] valueForKey:@"TD_USER_ANONYMOUS"];
+       return [anonymous boolValue];
+    }
+    return YES;
+}
 -(NSString*)getAppURL{
     return [[NSUserDefaults standardUserDefaults] valueForKey:@"API_URL"];
 }

@@ -32,10 +32,11 @@
     }
     [objDict setValue:self.userId forKey:@"user_id"];
     
-    if (![SingleForAnonymous sharedSingleForAnonymous].isAnonymous) {
+    if (![[TdDataTool sharedTdDataTool]getAnonymous]) {
         if ([SingleForMerge sharedSingleForMerge].isMerge) {
             NSString* uuid = [UIDevice currentDevice].identifierForVendor.UUIDString;
             [objDict setValue:uuid forKey:@"previous_id"];
+            [SingleForMerge sharedSingleForMerge].isMerge = NO;
         }
     }
     if (self.event != nil) {

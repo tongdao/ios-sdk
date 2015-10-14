@@ -24,7 +24,8 @@
     if ([appKey isEqualToString:@""] || [userId isEqualToString:@""]) {
         return NO;
     }else{
-        [SingleForAnonymous sharedSingleForAnonymous].isAnonymous = YES;
+//        [SingleForAnonymous sharedSingleForAnonymous].isAnonymous = YES;
+        [[TdDataTool sharedTdDataTool] saveAnonymous:YES];
         [[TdDataTool sharedTdDataTool] saveUuidAndKey:appKey userID:userId];
         return [[TongDaoBridge sharedTongDaoBridge] initSdk:appKey];
     }
@@ -34,7 +35,8 @@
     if ([appKey isEqualToString:@""] || [userId isEqualToString:@""]) {
         return NO;
     }else{
-        [SingleForAnonymous sharedSingleForAnonymous].isAnonymous = NO;
+//        [SingleForAnonymous sharedSingleForAnonymous].isAnonymous = NO;
+        [[TdDataTool sharedTdDataTool] saveAnonymous:NO];
         [[TdDataTool sharedTdDataTool] saveUuidAndKey:appKey userID:userId];
         return [[TongDaoBridge sharedTongDaoBridge] initSdk:appKey];
     }
@@ -399,7 +401,9 @@
         NSRange range = [path rangeOfString:dataUrl];
         if (range.length>0) {
 //            NSInteger intindex = range.length;
-            
+            NSUInteger StartLocation = range.location + range.length;
+            NSString* PAGEID = [path substringFromIndex:StartLocation];
+            return PAGEID;
         }
 
     }
