@@ -24,18 +24,17 @@
     if ([appKey isEqualToString:@""] || [userId isEqualToString:@""]) {
         return NO;
     }else{
-//        [SingleForAnonymous sharedSingleForAnonymous].isAnonymous = YES;
         [[TdDataTool sharedTdDataTool] saveAnonymous:YES];
         [[TdDataTool sharedTdDataTool] saveUuidAndKey:appKey userID:userId];
         return [[TongDaoBridge sharedTongDaoBridge] initSdk:appKey];
     }
 }
+
 +(BOOL)initSdkWithSdk:(NSString *)appKey andUserID:(NSString*)userId{
-    
+       
     if ([appKey isEqualToString:@""] || [userId isEqualToString:@""]) {
         return NO;
     }else{
-//        [SingleForAnonymous sharedSingleForAnonymous].isAnonymous = NO;
         [[TdDataTool sharedTdDataTool] saveAnonymous:NO];
         [[TdDataTool sharedTdDataTool] saveUuidAndKey:appKey userID:userId];
         return [[TongDaoBridge sharedTongDaoBridge] initSdk:appKey];
@@ -122,7 +121,7 @@
  保存用户多个自定义属性
  
  :param: values 用户的属性键值对(值支持字符串和数字)
- */
+*/
 +(void)identify:(NSMutableDictionary*)values{
     [[TongDaoBridge sharedTongDaoBridge] identify:values];
 }

@@ -15,6 +15,7 @@
 #import "FailList.h"
 static NSString *const X_APP_KEY = @"X-APP-KEY";
 static NSString *const X_SDK_VERSION = @"X-SDK-VERSION";
+static NSString *const X_DEVICE_KEY = @"X-DEVICE-KEY";
 
 static NSString *const CONTENT_TYPE_NAME = @"Content-Type";
 static NSString *const CONTENT_TYPE_VALUE = @"application/json";
@@ -22,7 +23,7 @@ static NSString *const CONTENT_TYPE_VALUE = @"application/json";
 static NSString *const ACCEPT_NAME = @"Accept";
 static NSString *const ACCEPT_VALUE=@"application/json";
 
-static NSString *const sdkVersion=@"1";
+static NSString *const sdkVersion=@"30000";
 
 static NSString *const X_AUTO_CLAIM=@"X-AUTO-CLAIM";
 static NSString *const AUTO_CLAIM_FLAG=@"1";
@@ -75,6 +76,7 @@ static NSString *const X_LOCAL_TIME=@"X-LOCAL-TIME";
     [request addValue:ACCEPT_VALUE forHTTPHeaderField:ACCEPT_NAME];
     [request addValue:appKey forHTTPHeaderField:X_APP_KEY];
     [request addValue:sdkVersion forHTTPHeaderField:X_SDK_VERSION];
+    [request addValue:[[TdDataTool sharedTdDataTool] getUUID] forHTTPHeaderField:X_DEVICE_KEY];
     [request addValue:[[TdDataTool sharedTdDataTool] getTimeStamp] forHTTPHeaderField:X_LOCAL_TIME];
     return request;
 }

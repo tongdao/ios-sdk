@@ -17,12 +17,50 @@
 singleton_implementation(TongDaoBridge)
 
 -(BOOL)initSdk:(NSString*)appKey{
-
+    
     if (appKey != nil) {
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(openApp)
+                                                     name:UIApplicationDidBecomeActiveNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(closeApp)
+                                                     name:UIApplicationDidEnterBackgroundNotification object:nil];
         [[TdService sharedTdService] sendInitialData];
         return YES;
     }
     return NO;
+}
+
+-(void)openApp{
+    if ([UIApplication sharedApplication].applicationState == UIApplicationStateActive) {
+        self.appClosed = NO;
+        self.appStartTime  = [NSDate date];
+        if (self.appStartTime == nil) {
+            return;
+        }
+        [self sendEvent:track event:@"!open_app" properties:nil];
+    }
+    if (self.pageNameEnd) {
+        [self onSessionStartWithPageName:self.pageNameEnd];
+    }
+}
+
+-(void)closeApp{
+    if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground) {
+        self.appClosed = YES;
+        if (self.pageNameStart) {
+            [self onSessionEndWithPageName:self.pageNameStart];
+        }
+        
+        if(self.appStartTime == nil){
+            return;
+        }
+        NSMutableDictionary* values = [[NSMutableDictionary alloc]init];
+        [values setValue:[[TdDataTool sharedTdDataTool] getTimeStamp:self.appStartTime] forKey:@"!started_at"];
+        [self sendEvent:track event:@"!close_app" properties:values];
+         self.appStartTime = nil;
+    }
+   
 }
 
 -(void)sendEvent:(ACTION_TYPE)action event:(NSString*)event properties:(NSMutableDictionary*)properties{
@@ -113,9 +151,12 @@ singleton_implementation(TongDaoBridge)
 
     [self sendEvent:track event:@"!close_page" properties:values];
     
-    self.startTime = nil;
-    self.pageNameStart = nil;
-    self.pageNameEnd = nil;
+    if (!self.appClosed) {
+        self.startTime = nil;
+        self.pageNameStart = nil;
+        self.pageNameEnd = nil;
+    }
+ 
 }
 -(void)mergeUserId:(NSString*)userId{
     [SingleForMerge sharedSingleForMerge].isMerge = YES;
@@ -138,7 +179,7 @@ singleton_implementation(TongDaoBridge)
 }
 
 -(void)identifyWithName:(NSString*)name andValue:(id)value{
-    if (![name isEqualToString:@""]) {
+    if (![name isEqualToString:@""]&& name!=nil) {
         NSMutableDictionary* values = [[NSMutableDictionary alloc]init];
         [values setObject:value forKey:name];
         [self sendEvent:identify event:nil properties:values];
@@ -147,7 +188,7 @@ singleton_implementation(TongDaoBridge)
 
 -(void)identifyPushToken:(NSString*)pushToken{
     NSLog(@"the---pushtoken %@",pushToken);
-    if ([pushToken isEqualToString:@""]) {
+    if ([pushToken isEqualToString:@""]||pushToken == nil) {
         return;
     }else{
         NSMutableDictionary* values = [[NSMutableDictionary alloc]init];
