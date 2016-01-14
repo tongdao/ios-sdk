@@ -291,7 +291,7 @@ singleton_implementation(TdDataTool)
             [productObj setValue:product.category forKey:@"!category"];
         }
         
-        if (!(productObj.allValues)) {
+        if (!productObj.allValues) {
             return nil;
         }
         
