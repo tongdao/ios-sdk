@@ -94,7 +94,7 @@ static TdService *_instance;
     NSMutableDictionary* data=[self makeEventsJsonDec:arr];
 
     if (data != nil) {
-//        NSLog(@"open message%@",data);
+        NSLog(@"open message%@",data);
         [TongDaoApi postEvents:data callBackForOpenMessage:self];
     }
 }
@@ -114,7 +114,7 @@ static TdService *_instance;
     }
         NSMutableDictionary* data=[self makeEventsJsonDec:arr];
         if (data != nil) {
-//            NSLog(@"%@",data);
+            NSLog(@"%@",data);
             [TongDaoApi postEvents:data callBack:self];
         }
 

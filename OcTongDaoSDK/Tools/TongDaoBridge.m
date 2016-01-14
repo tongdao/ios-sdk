@@ -25,6 +25,7 @@ singleton_implementation(TongDaoBridge)
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(closeApp)
                                                      name:UIApplicationDidEnterBackgroundNotification object:nil];
+        NSLog(@"UIapplicationState = %ld",(long)[UIApplication sharedApplication].applicationState);
         [[TdService sharedTdService] sendInitialData];
         return YES;
     }
@@ -32,7 +33,7 @@ singleton_implementation(TongDaoBridge)
 }
 
 -(void)openApp{
-    if ([UIApplication sharedApplication].applicationState == UIApplicationStateActive) {
+    if ([UIApplication sharedApplication].applicationState == UIApplicationStateActive ||[UIApplication sharedApplication].applicationState == UIApplicationStateInactive) {
         self.appClosed = NO;
         self.appStartTime  = [NSDate date];
         if (self.appStartTime == nil) {
