@@ -396,7 +396,7 @@ singleton_implementation(TdDataTool)
         }
     }
     
-    if(propertiesObj.allValues){
+    if(!propertiesObj.allValues){
         return nil;
     }
     return propertiesObj;
