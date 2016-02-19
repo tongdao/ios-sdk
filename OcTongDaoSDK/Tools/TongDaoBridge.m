@@ -32,6 +32,20 @@ singleton_implementation(TongDaoBridge)
     return NO;
 }
 
+-(BOOL)initSdk:(NSString*)appKey andIgnoreParam:(TongDaoinitData)ingnoreInfor{
+    if (appKey != nil) {
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(openApp)
+                                                     name:UIApplicationDidBecomeActiveNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(closeApp)
+                                                     name:UIApplicationDidEnterBackgroundNotification object:nil];
+        [[TdService sharedTdService] sendInitialDataAndIgnore:ingnoreInfor];
+        return YES;
+    }
+    return NO;
+}
+
 -(void)openApp{
     if ([UIApplication sharedApplication].applicationState == UIApplicationStateActive ||[UIApplication sharedApplication].applicationState == UIApplicationStateInactive) {
         self.appClosed = NO;

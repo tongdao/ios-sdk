@@ -40,9 +40,32 @@
         return [[TongDaoBridge sharedTongDaoBridge] initSdk:appKey];
     }
 }
++(BOOL)initSdkWithSdk:(NSString *)appKey andUserID:(NSString*)userId andIgnoreParam:(TongDaoinitData)ingnoreInfor{
+    if ([appKey isEqualToString:@""] || appKey == nil) {
+        return NO;
+    }
+    if (userId == nil) {
+        [[TdDataTool sharedTdDataTool] saveAnonymous:YES];
+        userId  = [UIDevice currentDevice].identifierForVendor.UUIDString;
+    }else{
+        [[TdDataTool sharedTdDataTool] saveAnonymous:NO];
+    }
+    if ([userId isEqualToString:@""]) {
+        return NO;
+    }
+    
+    [[TdDataTool sharedTdDataTool]saveUuidAndKey:appKey userID:userId];
+    return [[TongDaoBridge sharedTongDaoBridge] initSdk:appKey andIgnoreParam:ingnoreInfor];
+    
+}
 +(void)setUserId:(NSString*)userId{
     [[TongDaoBridge sharedTongDaoBridge] mergeUserId:userId];
 }
+
++(void)loginWithUserId:(NSString*)userId{
+    [[TongDaoBridge sharedTongDaoBridge] mergeUserId:userId];    
+}
+
 +(void)setDeeplinkDictionary:(NSMutableDictionary*)dictionary{
     [[TongDaoBridge sharedTongDaoBridge]setDeeplinkDictionary:dictionary];
 }
@@ -430,7 +453,6 @@
  :param: userInfo 推送消息的附加信息
  */
 +(void)trackOpenMesageForTongDaoPush:(NSDictionary *)userInfo{
-//    NSLog(@"进入了同道的推送函数中");
     [self trackOpenMessageForBaiduAndJPush:userInfo];
 }
 
@@ -445,7 +467,7 @@
     if (userInfo == nil) {
         return;
     }
-//    NSLog(@"这是trackOpenMessageForBaiduAndJPush函数");
+    
     NSNumber* tempmsgId = [userInfo valueForKey:@"tongrd_mid"];
     NSNumber* tempcliId = [userInfo valueForKey:@"tongrd_cid"];
     
@@ -457,7 +479,6 @@
     NSInteger cliId = [tempcliId integerValue];
     
     if (msgId != 0 && cliId != 0) {
-//        NSLog(@"这是sendOpenMessageWithEventName名字叫做open_message");
         [self sendOpenMessageWithEventName:@"!open_message" andMid:msgId andCid:cliId];
     }
     
@@ -471,6 +492,17 @@
  
  */
 +(void)trackOpenPushMessageForBaiduAndJPush:(NSDictionary*)userInfo{
+    [self trackOpenMessageForBaiduAndJPush:userInfo];
+}
+
+/**
+ 
+ 跟踪用户打开了友盟推送消息
+ 
+ :param: userInfo 推送消息的附加信息
+ 
+ */
++(void)trackOpenPushMessageForUmeng:(NSDictionary*)userInfo{
     [self trackOpenMessageForBaiduAndJPush:userInfo];
 }
 

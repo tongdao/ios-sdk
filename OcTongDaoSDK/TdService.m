@@ -65,6 +65,25 @@ static TdService *_instance;
     [[TdStartLocation sharedTdStartLocation] start:self];
 }
 
+-(void)sendInitialDataAndIgnore:(TongDaoinitData)ingnoreInfor{
+    self.ignoreInfor  = ingnoreInfor;
+    if (ingnoreInfor == TDLocationIfor) {
+        NSMutableDictionary* initDic = [[NSMutableDictionary alloc]init];
+        //        [initDic setValue:locDic forKey:@"!location"];
+        InfoDataTool *infoTool = [[InfoDataTool alloc]init];
+        [initDic setValue:[infoTool getDeviceDict] forKey:@"!device"];
+        [initDic setValue:[infoTool getAppDic] forKey:@"!application"];
+        [initDic setValue:[infoTool getCarrierDic] forKey:@"!connection"];
+        [initDic setValue:[infoTool getFingerprintDict] forKey:@"!fingerprint"];
+        NSNumber *isAnonymous = [NSNumber numberWithBool:[[TdDataTool sharedTdDataTool] getAnonymous]];
+        [initDic setValue:isAnonymous forKey:@"!anonymous"];
+        TdEventBean* tdEventBean = [[TdEventBean alloc]initWithaction:identify event:nil andProperties:initDic];
+        [self sendTrackEvent:tdEventBean];
+    }else{
+        [[TdStartLocation sharedTdStartLocation] start:self];
+    }
+}
+
 -(void)sendTrackEvent:(TdEventBean*)tdEventBean{
         NSMutableArray* arr = [NSMutableArray arrayWithObject:[tdEventBean getJsonObject]];
         [self postEventData:arr];
@@ -227,10 +246,18 @@ static TdService *_instance;
     NSMutableDictionary* initDic = [[NSMutableDictionary alloc]init];
     [initDic setValue:locDic forKey:@"!location"];
     InfoDataTool *infoTool = [[InfoDataTool alloc]init];
-    [initDic setValue:[infoTool getDeviceDict] forKey:@"!device"];
-    [initDic setValue:[infoTool getAppDic] forKey:@"!application"];
-    [initDic setValue:[infoTool getCarrierDic] forKey:@"!connection"];
-    [initDic setValue:[infoTool getFingerprintDict] forKey:@"!fingerprint"];
+    if (self.ignoreInfor != TDDeviceInfor) {
+        [initDic setValue:[infoTool getDeviceDict] forKey:@"!device"];
+    }
+    if (self.ignoreInfor != TDApplicationInfor) {
+        [initDic setValue:[infoTool getAppDic] forKey:@"!application"];
+    }
+    if (self.ignoreInfor != TDNetworkInfo) {
+        [initDic setValue:[infoTool getCarrierDic] forKey:@"!connection"];
+    }
+    if (self.ignoreInfor != TDFingerPrintInfor) {
+        [initDic setValue:[infoTool getFingerprintDict] forKey:@"!fingerprint"];
+    }
     NSNumber *isAnonymous = [NSNumber numberWithBool:[[TdDataTool sharedTdDataTool] getAnonymous]];
     [initDic setValue:isAnonymous forKey:@"!anonymous"];
     TdEventBean* tdEventBean = [[TdEventBean alloc]initWithaction:identify event:nil andProperties:initDic];
