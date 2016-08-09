@@ -32,7 +32,12 @@
     }
     [objDict setValue:self.userId forKey:@"user_id"];
     
+//    NSNumber* anoymous = [NSNumber numberWithBool:[[TdDataTool sharedTdDataTool]getAnonymous]];
+//    NSNumber* merge = [NSNumber numberWithBool:[SingleForMerge sharedSingleForMerge].isMerge];
+//    NSLog(@"anoymous--%@,,merge---%@",anoymous,merge);
+    
     if (![[TdDataTool sharedTdDataTool]getAnonymous]) {
+        
         if ([SingleForMerge sharedSingleForMerge].isMerge) {
             NSString* uuid = [UIDevice currentDevice].identifierForVendor.UUIDString;
             [objDict setValue:uuid forKey:@"previous_id"];

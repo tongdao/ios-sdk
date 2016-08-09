@@ -7,39 +7,27 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>5BD64E32-9B14-470F-937B-C147097ED8FF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>TongDaoSDK</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>6181776F61038BD25877FEF0DCC746CE566BA4FB</key>
-		<string>gitlab.jarkaslab.com:mobile/ios-sdk.git</string>
-		<key>AC6D22FAFE947D8A5E06150BAEA84B7BA3CB7C01</key>
-		<string>gitlab.jarkaslab.com:root/0qian_ios_swift_sdk.git</string>
+		<string>https://github.com/tongrd/ios-sdk.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>OcTongDaoSDK/TongDaoSDK.xcodeproj</string>
+	<string>OcTongDaoSDK/TongDaoSDK.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>6181776F61038BD25877FEF0DCC746CE566BA4FB</key>
 		<string>../../..</string>
-		<key>AC6D22FAFE947D8A5E06150BAEA84B7BA3CB7C01</key>
-		<string>../../../../0qian_ios_swift_sdk</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>gitlab.jarkaslab.com:mobile/ios-sdk.git</string>
+	<string>https://github.com/tongrd/ios-sdk.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
 	<string>6181776F61038BD25877FEF0DCC746CE566BA4FB</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AC6D22FAFE947D8A5E06150BAEA84B7BA3CB7C01</string>
-			<key>IDESourceControlWCCName</key>
-			<string>0qian_ios_swift_sdk</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

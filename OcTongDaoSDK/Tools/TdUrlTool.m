@@ -10,6 +10,7 @@
 #define HOST @"https://api.tongrd.com/"//release
 //#define HOST @"https://api.jarkaslab.com/"//stage
 //#define HOST @"http://192.168.1.131/"
+//#define HOST @"http://10.10.252.149/"
 //#define HOST @"https://apitest.jarkaslab.com/"//entergration
 @implementation TdUrlTool
 +(NSString*)getEventsUrl{

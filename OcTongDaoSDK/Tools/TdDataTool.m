@@ -179,6 +179,8 @@ singleton_implementation(TdDataTool)
     NSDateFormatter* dateFormat = [[NSDateFormatter alloc]init];
     dateFormat.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
     dateFormat.timeZone = [[NSTimeZone alloc]initWithName:@"UTC"];
+    NSLocale *indianLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+    [dateFormat setLocale:indianLocale];
     return [dateFormat stringFromDate:newDate];
 }
 
