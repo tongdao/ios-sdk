@@ -32,9 +32,6 @@
     }
     [objDict setValue:self.userId forKey:@"user_id"];
     
-//    NSNumber* anoymous = [NSNumber numberWithBool:[[TdDataTool sharedTdDataTool]getAnonymous]];
-//    NSNumber* merge = [NSNumber numberWithBool:[SingleForMerge sharedSingleForMerge].isMerge];
-//    NSLog(@"anoymous--%@,,merge---%@",anoymous,merge);
     
     if (![[TdDataTool sharedTdDataTool]getAnonymous]) {
         

@@ -23,7 +23,7 @@ static NSString *const CONTENT_TYPE_VALUE = @"application/json";
 static NSString *const ACCEPT_NAME = @"Accept";
 static NSString *const ACCEPT_VALUE=@"application/json";
 
-static NSString *const sdkVersion=@"30207";
+static NSString *const sdkVersion=@"30208";
 
 static NSString *const X_AUTO_CLAIM=@"X-AUTO-CLAIM";
 static NSString *const AUTO_CLAIM_FLAG=@"1";

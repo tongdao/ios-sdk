@@ -25,7 +25,7 @@ singleton_implementation(TongDaoBridge)
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(closeApp)
                                                      name:UIApplicationDidEnterBackgroundNotification object:nil];
-        NSLog(@"UIapplicationState = %ld",(long)[UIApplication sharedApplication].applicationState);
+//        NSLog(@"UIapplicationState = %ld",(long)[UIApplication sharedApplication].applicationState);
         [[TdService sharedTdService] sendInitialData];
         return YES;
     }
@@ -81,13 +81,50 @@ singleton_implementation(TongDaoBridge)
 -(void)sendEvent:(ACTION_TYPE)action event:(NSString*)event properties:(NSMutableDictionary*)properties{
     TdEventBean* tdEvent = [[TdEventBean alloc]initWithaction:action event:event andProperties:properties];
     [[TdService sharedTdService]sendTrackEvent:tdEvent];
+    [self trackThePushEnable];
 }
 
 -(void)sendEvent:(ACTION_TYPE)action event:(NSString*)event propertiesForOpenMessage:(NSMutableDictionary*)properties{
     TdEventBean* tdEvent = [[TdEventBean alloc]initWithaction:action event:event andProperties:properties];
     [[TdService sharedTdService]sendOpenMessageTrackEvent:tdEvent];
+    [self trackThePushEnable];
 }
 
+-(void)trackThePushEnable{
+    if ([[TdDataTool sharedTdDataTool]getNotificationSwitchStatus]){
+        if (![self isAllowedNotification]) {
+            [[TdDataTool sharedTdDataTool]saveNotificationSwitchStatus:NO];
+            NSMutableDictionary* values = [[NSMutableDictionary alloc]init];
+            [values setObject:@"false" forKey:@"!push_enable"];
+            TdEventBean *notificateEvent = [[TdEventBean alloc]initWithaction:identify event:nil andProperties:values];
+            [[TdService sharedTdService]sendTrackEvent:notificateEvent];
+        }
+        
+    }else{
+        if ([self isAllowedNotification]) {
+            [[TdDataTool sharedTdDataTool]saveNotificationSwitchStatus:YES];
+            NSMutableDictionary* values = [[NSMutableDictionary alloc]init];
+            [values setObject:@"ture" forKey:@"!push_enable"];
+            TdEventBean *notificateEvent = [[TdEventBean alloc]initWithaction:identify event:nil andProperties:values];
+            [[TdService sharedTdService]sendTrackEvent:notificateEvent];
+        }
+    }
+}
+-(BOOL)isAllowedNotification{
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+        
+        UIUserNotificationSettings *setting = [[UIApplication sharedApplication]currentUserNotificationSettings];
+        if (UIUserNotificationTypeNone != setting.types) {
+            return
+            YES;
+        }
+    } else {
+        UIRemoteNotificationType type = [[UIApplication sharedApplication]enabledRemoteNotificationTypes];
+        if (UIRemoteNotificationTypeNone != type)
+            return YES;
+    }
+    return NO;
+}
 -(void)setDeeplinkDictionary:(NSMutableDictionary*)dictionary{
     self.dictionary = dictionary;
 }

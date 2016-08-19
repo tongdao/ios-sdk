@@ -53,6 +53,19 @@ singleton_implementation(TdDataTool)
     }
     return YES;
 }
+-(void)saveNotificationSwitchStatus:(BOOL)enablePush{
+    NSNumber* anoymous = [NSNumber numberWithBool:enablePush];
+    NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setValue:anoymous forKeyPath:@"TD_SWITCH_STATUS"];
+    [userDefaults synchronize];
+}
+-(BOOL)getNotificationSwitchStatus{
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"TD_SWITCH_STATUS"]) {
+        NSNumber* anonymous = [[NSUserDefaults standardUserDefaults] valueForKey:@"TD_SWITCH_STATUS"];
+        return [anonymous boolValue];
+    }
+    return YES;
+}
 -(NSString*)getAppURL{
     return [[NSUserDefaults standardUserDefaults] valueForKey:@"API_URL"];
 }
