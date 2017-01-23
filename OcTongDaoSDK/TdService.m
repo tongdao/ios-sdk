@@ -133,7 +133,7 @@ static TdService *_instance;
     }
         NSMutableDictionary* data=[self makeEventsJsonDec:arr];
         if (data != nil) {
-//            NSLog(@"%@",data);
+            NSLog(@"%@",data);
             [TongDaoApi postEvents:data callBack:self];
         }
 

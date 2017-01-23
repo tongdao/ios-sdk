@@ -11,7 +11,8 @@
 //#define HOST @"https://api.jarkaslab.com/"//stage
 //#define HOST @"http://192.168.1.131/"
 //#define HOST @"http://10.10.252.149/"
-//#define HOST @"https://apitest.jarkaslab.com/"//entergration
+//#define HOST @"http://apitest.jarkaslab.com/"//entergration
+//  #define HOST @"http://121.199.57.67/"//Staging
 @implementation TdUrlTool
 +(NSString*)getEventsUrl{
     return [HOST stringByAppendingString:@"v2/events"];

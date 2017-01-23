@@ -86,6 +86,7 @@
 		2AF345DD1B8B588900A61450 /* JXMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF345D91B8B588900A61450 /* JXMutableArray.h */; };
 		2AF345DE1B8B588900A61450 /* JXMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF345DA1B8B588900A61450 /* JXMutableArray.m */; };
 		2AF7692E1B79F87D00EAD347 /* TdMessageButtonBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF7692C1B79F87D00EAD347 /* TdMessageButtonBean.m */; };
+		5F4A2C911E31F3B900EE25B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4A2C901E31F3B900EE25B9 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,6 +157,9 @@
 		2AF345DA1B8B588900A61450 /* JXMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXMutableArray.m; sourceTree = "<group>"; };
 		2AF7692B1B79F87D00EAD347 /* TdMessageButtonBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdMessageButtonBean.h; sourceTree = "<group>"; };
 		2AF7692C1B79F87D00EAD347 /* TdMessageButtonBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdMessageButtonBean.m; sourceTree = "<group>"; };
+		509413391E35FFFE000CB5D0 /* TongdaoSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongdaoSDK.h; sourceTree = "<group>"; };
+		5094133A1E35FFFE000CB5D0 /* TongdaoSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongdaoSDK.m; sourceTree = "<group>"; };
+		5F4A2C901E31F3B900EE25B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4A2C911E31F3B900EE25B9 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +188,9 @@
 				2A6E61C21B719B2A00C2C2BD /* interFace */,
 				2A6E61C51B719B2A00C2C2BD /* Beans */,
 				2A6E61981B71996E00C2C2BD /* TongDaoSDK */,
+				509413381E35FFFE000CB5D0 /* TongdaoSDK */,
 				2A6E61971B71996E00C2C2BD /* Products */,
+				5F4A2C8F1E31F3B900EE25B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -312,6 +319,23 @@
 				2A39BCC01BA2AB44002087D6 /* SingleForMerge.m */,
 			);
 			path = Beans;
+			sourceTree = "<group>";
+		};
+		509413381E35FFFE000CB5D0 /* TongdaoSDK */ = {
+			isa = PBXGroup;
+			children = (
+				509413391E35FFFE000CB5D0 /* TongdaoSDK.h */,
+				5094133A1E35FFFE000CB5D0 /* TongdaoSDK.m */,
+			);
+			path = TongdaoSDK;
+			sourceTree = "<group>";
+		};
+		5F4A2C8F1E31F3B900EE25B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F4A2C901E31F3B900EE25B9 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,6 +516,7 @@
 		2A38C57F1B74A2780008CD22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"OTHER_CFLAGS[arch=*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -535,7 +560,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -572,6 +597,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				"OTHER_CFLAGS[arch=*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -579,19 +606,22 @@
 		2A6E619E1B71996E00C2C2BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = NO;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = TongDaoSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
 				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tongdao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -599,19 +629,23 @@
 		2A6E619F1B71996E00C2C2BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = NO;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = TongDaoSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
 				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
+				"OTHER_CFLAGS[arch=*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tongdao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
