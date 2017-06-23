@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/TongDaoShow/TempDataRealm.m \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/TongDaoShow/TempDataRealm.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/Modules/module.modulemap \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/PrivateHeaders/RLMSchema_Private.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/PrivateHeaders/RLMResults_Private.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/PrivateHeaders/RLMRealm_Private.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/PrivateHeaders/RLMRealm_Dynamic.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/PrivateHeaders/RLMRealmUtil.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/PrivateHeaders/RLMProperty_Private.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/PrivateHeaders/RLMObject_Private.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/PrivateHeaders/RLMObjectStore.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/PrivateHeaders/RLMMigration_Private.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/PrivateHeaders/RLMListBase.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/PrivateHeaders/RLMArray_Private.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/Headers/RLMSchema.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/Headers/RLMResults.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/Headers/RLMRealm.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/Headers/RLMConstants.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/Headers/RLMProperty.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/Headers/RLMPlatform.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/Headers/RLMObjectSchema.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/Headers/RLMObjectBase.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/Headers/RLMObject.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/Headers/RLMMigration.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/Headers/RLMCollection.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/Headers/RLMArray.h \
+  /Users/agonch/tongdao/ios/APNS\ Demo/for\ testing/Realm.framework/Headers/Realm.h

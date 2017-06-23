@@ -1,0 +1,27 @@
+-x
+objective-c
+-arch
+arm64
+-std=gnu99
+-fobjc-arc
+-fmodules
+-fbuild-session-file=/var/folders/0b/y_t8qz4d49x8cjqh_0gsl8jr0000gn/C/com.apple.DeveloperTools/8.2.1-8C1002/Xcode/ModuleCache/Session.modulevalidation
+-fpascal-strings
+-O0
+-fno-common
+-DDEBUG=1
+-DOBJC_OLD_DISPATCH_PROTOTYPES=0
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk
+-miphoneos-version-min=8.0
+-g
+-fobjc-abi-version=2
+-fembed-bitcode-marker
+-iquote
+-iquote
+-I/Users/agonch/tongdao/ios/TongdaoSDK/build/Debug-iphoneos/include
+-F/Users/agonch/tongdao/ios/TongdaoSDK/build/Debug-iphoneos
+aarch64-apple-darwin16.0.0
+"4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)"
+SDK_PRODUCT_BUILD_VERSION=14C89
+14C89
